@@ -1,0 +1,35 @@
+header{
+    color: white;
+    background-color: cornflowerblue;
+    text-align: center;
+    font-size: 35px;
+    display:inline-block;
+    border-color: black;
+    width: 350px;
+    padding: 30;
+    border-style: dotted;
+    border-color: white;
+}
+
+h1{
+    color:white;
+    background-color: lightcoral;
+    text-align: center;
+    font-size: 25px;
+    display:inline-block;
+    width: 350px;
+    padding:30;
+    border-style: dotted;
+    border-color: white;
+    
+}
+
+
+body{
+    background-color: rgb(245, 240, 234);
+    text-align: center;
+    display: inline-block;
+    width:600px;
+    padding: 30px;
+    margin: 20px;
+}
