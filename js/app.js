@@ -1,5 +1,5 @@
 
-'use strict';
+//5 Questions 
 
 var userName = prompt('Hi, what is your name?');
         alert('Welcome, ' + userName + '! Let\'s play a guessing game!');
@@ -39,7 +39,9 @@ var answerSports = prompt('Is my favorite football team the Seahawks?').toLowerC
         alert('No way ' + userName + '!');
         console.log('The user got the incorrect answer to #4');
     }
+/////////////////////////////////////////////////////////
 
+//Question 5
 var answerGames = prompt('Do I like to play board games?').toLowerCase();
     if (answerGames === "yes" || answerGames === 'y') {
         alert('Absolutely ' + userName + '!' + ' Let\'s have a game night!');
@@ -49,5 +51,61 @@ var answerGames = prompt('Do I like to play board games?').toLowerCase();
         console.log('The user got the incorrect answer for #5');
 
     }
+///////////////////////////////////////////////////////////
+//Question 6
+
+var attemptTry = 4;
+while(attemptTry > 0 && guessNum != 3) {
+    var guessNum = prompt('How many nephews do I have?');
+    attemptTry--;
+
+    if(guessNum == 3) {
+        alert('You got it ' + userName + '!');  
+        console.log('user answered question 6 correctly');
+    } else if (guessNum > 3) {
+        alert('Too high!'); 
+        console.log('user guess is too high');
+    } else if (guessNum < 3) {
+        alert('Too low!');
+        console.log('user guess is too low');
+    } 
+    if (attemptTry === 0) {
+        alert('Whoops! ' + userName + ' you are out of trys!');
+        console.log('user ran out of attempts');
+    }
+}
+/////////////////////////////////////////////////////////////////
+//Question 7
+
+var attemptSports = 6;
+var correctResponse = 0; 
+var sportsList = ['basketball', 'football', 'volleyball', 'swimming', 'tennis', 'soccer'];
+
+while(attemptSports > 0)  {
+var guessSports = prompt('What at my favorite sports?').toLowerCase();
+        console.log(sportsList);
+        attemptSports--;
+
+    if (sportsList.indexOf(guessSports) >= 0) {
+         alert('Nice job! I like it!');
+        correctResponse++;
+        console.log('user guessed the correct sports');
     
 
+    } else if (sportsList.indexOf(guessSports) < 0) {
+        alert('That is fun but not my favorite.');
+        console.log('user was incorrect');
+    }
+
+    if (attemptSports === 0) {
+        alert('Whoops! ' + userName + ' you are out of trys');
+        console.log('user ran out of attempts');
+    break;
+    }
+
+    
+    alert('You answered ' + correctResponse + ' out of 6 ' + userName + '!');
+}
+    
+
+    
