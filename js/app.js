@@ -1,3 +1,8 @@
+'use strict';
+
+var correctResponse = 0; 
+
+
 
 //5 Questions 
 
@@ -12,6 +17,7 @@ var answerPizza = prompt('Do I like pizza?').toLowerCase();
         console.log('The user got the incorrect answer to #1');
     } else {
         alert('I love pizza! Especially pepperoni pizza!');
+        correctResponse++; 
         console.log('The user got the correct answer to #1');
     }
 }
@@ -21,6 +27,7 @@ function questionTwo(){
 var userJoe = prompt('Should I have more coffee today?').toLowerCase();
     if (userJoe === 'yes' || userJoe === 'y') {
         alert('Absolutely! Hot coffee coming up!');
+        correctResponse++; 
         console.log('The user got the correct answer to #2');
     } else {
         alert('Maybe just one more cup...');
@@ -36,6 +43,7 @@ var answerPets = prompt('Do I have a dog?').toLowerCase();
         console.log('The user got the incorrect answer to #3');
     } else {
         alert('Yes! My dog is named Douglas. He is a Papillon, King Charles, Chihuahua!');
+        correctResponse++;
         console.log('The user got the correct answer to #3');
     }
 }
@@ -45,6 +53,7 @@ function questionFour(){
 var answerSports = prompt('Is my favorite football team the Seahawks?').toLowerCase();
     if (answerSports === 'yes' || answerSports ==='y') {
         alert('Go HAWKS!');
+        correctResponse++; 
         console.log('The user got the correct answer to #4');
     } else {
         alert('No way ' + userName + '!');
@@ -60,6 +69,7 @@ function questionFive(){
 var answerGames = prompt('Do I like to play board games?').toLowerCase();
     if (answerGames === "yes" || answerGames === 'y') {
         alert('Absolutely ' + userName + '!' + ' Let\'s have a game night!');
+        correctResponse++;
         console.log('The user got the correct answer to #5');  
     } else {
         alert('Who doesn\'t love a good game night?');
@@ -79,6 +89,7 @@ while(attemptTry > 0 && guessNum != 3) {
 
     if(guessNum == 3) {
         alert('You got it ' + userName + '!');  
+        correctResponse++ 
         console.log('user answered question 6 correctly');
     } else if (guessNum > 3) {
         alert('Too high!'); 
@@ -99,12 +110,11 @@ questionSix();
 //Question 7
 
 var attemptSports = 6;
-var correctResponse = 0; 
 var sportsList = ['basketball', 'football', 'volleyball', 'swimming', 'tennis', 'soccer'];
 
 function questionSeven(){
 while(attemptSports > 0)  {
-var guessSports = prompt('What at my favorite sports?').toLowerCase();
+var guessSports = prompt('What are my favorite sports?').toLowerCase();
         console.log(sportsList);
         attemptSports--;
 
@@ -117,6 +127,7 @@ var guessSports = prompt('What at my favorite sports?').toLowerCase();
 
     } else if (sportsList.indexOf(guessSports) < 0) {
         alert('That is fun but not my favorite.');
+        correctResponse++;
         console.log('user was incorrect');
     }
 
@@ -130,8 +141,4 @@ var guessSports = prompt('What at my favorite sports?').toLowerCase();
 questionSeven();
 
     
-    alert('You answered ' + correctResponse + ' out of 6 ' + userName + '!');
-    
-    
-
-    
+    alert('You answered ' + correctResponse + ' out of 7 ' + userName + '!');
