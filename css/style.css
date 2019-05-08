@@ -17,14 +17,13 @@ header{
 
 
 h1, h2{
-    padding: 10px;
+    padding: 20px;
     color:#0A0B09;
     background-color: #FAFBFA;
     text-align: center;
     font-size: 25px;
     display:inline-block;
     width: 300px;
-    padding:10;
     margin-top: 25px;
     margin-bottom: 5px;
     margin-left: 20px;
@@ -34,21 +33,28 @@ h1, h2{
     
     
 }
-ol, ul {
+
+ ul {
     width: 33.33%;
-    padding: 10px;
-    height: 300px;
+    /* //height: 300px; */
     list-style: decimal;
     line-height: 1.3em;
-    margin-left: 50px;
+    
 }
+ ol {
+    width: 33.33%; 
+    /* height: 300px; */
+    /* list-style: decimal; */
+    line-height: 1.3em;
+    /* margin-left: 50px; */
 
+}
 body{
     background-color:rgb(168, 196, 178);
     margin-left:50px;
     margin-right: 50px;
     font-size: 20;
-    padding: 5;
+    
 }
 
 p{
